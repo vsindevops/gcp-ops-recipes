@@ -13,6 +13,34 @@ This runbook documents, in step-by-step order, how to build and test a secure **
 
 ---
 
+## 📘 Use Case: Secure Access Architecture for Payment Data Analysis
+
+This Terraform-based GCP infrastructure simulates a **production-grade environment** designed for a small internal team of **DevOps, SRE, and Data Science engineers** who require secure access to sensitive payment data for **transaction analysis**, **fraud detection**, and **application behavior research**.
+
+### 🔹 Scenario
+
+The team operates in a controlled production setup where:
+
+- A **Bastion Host** serves as the **single entry point** into the environment.  
+  - It has a public IP and is accessible only via SSH.  
+  - It enforces centralized access control and auditing for all engineers.
+- A **Prod Server** runs within a **private subnet**, hosting payment data or backend services.  
+  - It has **no public IP**, ensuring it’s isolated from the internet.  
+  - Access is restricted to SSH connections **only from the bastion**.
+- Around **30 engineers** securely connect to the bastion host, which then provides controlled access to the production VM for their analytics and operational tasks.
+
+### 🔹 Objectives
+
+This setup demonstrates:
+
+- Secure SSH ingress via a bastion pattern.  
+- Private network segregation within a custom VPC.  
+- Role-based infrastructure provisioning using Terraform.  
+- Realistic simulation of concurrent engineer access (for stress or audit testing).  
+- Clean teardown and reproducible provisioning.
+
+---
+
 ## 1. Prerequisites
 
 ### Local Setup
