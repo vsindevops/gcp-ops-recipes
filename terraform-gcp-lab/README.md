@@ -92,7 +92,7 @@ terraform-gcp-lab/
 ├─ network.tf
 ├─ compute.tf
 ├─ terraform.tfvars
-└─ outputs.tf (optional)
+
 ```
 
 ---
