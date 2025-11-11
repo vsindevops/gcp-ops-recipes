@@ -1,4 +1,4 @@
-# Terraform on GCP: Bastion + Private Prod Lab (Runbook)
+# Terraform on GCP: Bastion + Private Prod Lab
 
 ## Overview
 
@@ -10,8 +10,6 @@ This runbook documents, in step-by-step order, how to build and test a secure **
 * SSH access using a generated key pair
 * Simulation of 30 concurrent users logging into the Prod server
 * Cleanup and teardown (Terraform destroy + service account + bucket deletion)
-
-This document starts from the point where the learner was **confused**, and the instructor reset the learning process with zero prior knowledge.
 
 ---
 
