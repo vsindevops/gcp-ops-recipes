@@ -219,6 +219,7 @@ variable "lab_network_name" {
   default     = "lab-vpc"
 }
 
+#This will be generated in step 6.
 variable "ssh_public_key" {
   description = "Public SSH key in the format 'username:ssh-ed25519 ...'"
   type        = string
