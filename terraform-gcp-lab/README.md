@@ -22,7 +22,7 @@ This Terraform-based GCP infrastructure simulates a **production-grade environme
 The team operates in a controlled production setup where:
 
 - A **Bastion Host** serves as the **single entry point** into the environment.  
-  - It has a public IP and is accessible only via SSH.  
+  - It has a public IP and is accessible only via SSH.  --> ### This is just for Lab, In actual Prod environments, IP's of a particular network should be given instead of 0.0.0.0/0
   - It enforces centralized access control and auditing for all engineers.
 - A **Prod Server** runs within a **private subnet**, hosting payment data or backend services.  
   - It has **no public IP**, ensuring it’s isolated from the internet.  
