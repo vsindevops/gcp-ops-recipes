@@ -1,0 +1,1 @@
+# useful outputs: bastion_ip, prod_private_ip
