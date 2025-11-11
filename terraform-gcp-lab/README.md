@@ -240,7 +240,7 @@ provider "google" {
 
 ```hcl
 project_id = "your-project-id"
-ssh_public_key = "engineer:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEWKf/GDmZoABOMf/2p9VeFXIjIMw5giCtTNv48DWPtV lab-bastion"
+ssh_public_key = "<username:generated key pair output from step-6>"
 ```
 
 Validate:
